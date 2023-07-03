@@ -1,0 +1,185 @@
+#front { 
+	background-color: black;
+ /* background: url(img/noorwegen.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+#abstract {
+	color: white;
+	font-size: 18pt;
+	text-align: center;
+	width: 70%;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+#name {
+	width: 100%;
+}
+
+#menu {
+	list-style-type: none;
+	margin: 7vh auto 0 auto;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	max-width: 500px;
+	line-height: 2.2em;
+}
+
+#menu li {
+	flex: 1 1 auto;
+	text-align: center;
+	margin: 0 10px 0 10px;
+}
+
+#menu img {
+	height: 50px;
+}
+
+.header #menu {
+	display: none;
+}
+
+.header #menu li img {
+	width: 100%;
+	height: auto;
+}
+
+#menuToggle {
+	display: none;
+}
+
+.homeblock {
+	display: block;
+	margin: 10vh auto 10vh auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.header {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	width: 470px;
+}
+
+.homebutton {
+	width: 400px;
+	margin-left: 70px;
+}
+
+.homebuttonWit {
+	display: none;
+}
+
+.burger {
+	display: none;
+}
+
+.menuimage {
+	width:175px;
+	margin-top: -10px;
+}
+
+.menuimage .cls-1 {
+	fill: none;
+	pointer-events: visible;
+	cursor: pointer;
+}
+
+.content {
+	margin: 50px 550px 50px auto;
+	max-width: 600px;
+	font-size: 14pt;
+	line-height: 1.5;
+}
+
+.quote {
+	width: 70%;
+	margin-left: -30px;
+}
+
+.title {
+	height: 50px;
+	margin-left: -30px;
+	margin-top: 15px;
+}
+
+.subtitle {
+	height: 40px;
+	margin-left: -30px;
+	margin-top: 15px;
+}
+
+.element {
+	background-color: lightgrey;
+	padding: 5px;
+}
+
+.photos {
+	height: 150px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: black;
+		width: auto;
+		padding: 10px;
+		text-align: top;
+	}
+	.homebuttonWit {
+		display: inline-block;
+		height: 50px;
+	}
+	.homebuttonWit img {
+		height: 100%;
+	}
+	.burger {
+		display: inline-block;
+		height: 20px;
+		margin-right: 10px;
+	}
+	.burger img {
+		height: 100%;
+	}
+	.menuimage {
+		display: none;
+	}
+	.homebutton {
+		display: none;
+	}
+	
+	#menuToggle:checked + .header #menu {
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		margin-top: 10px;
+		line-height: 1em;
+		max-width: 400px;
+	}
+
+	.content {
+		margin: auto;
+		margin-top: 80px;
+	}
+	.title {
+		margin-left: 0;
+	}
+	.subtitle {
+		margin-left: 0;
+	}
+	.quote {
+		margin-left: 0;
+	}
+}

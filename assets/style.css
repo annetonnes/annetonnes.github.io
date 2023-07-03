@@ -1,0 +1,26 @@
+/*body {
+	background-color: black;
+}
+
+h1 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 80pt;
+	font-weight: normal;
+}
+
+#site {
+	text-align: center;
+	color: white;
+	max-width: 500px;
+	max-height: 500px;
+	margin: auto;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+*/
+#canvasdots {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

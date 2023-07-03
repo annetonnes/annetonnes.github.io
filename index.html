@@ -2,40 +2,53 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title>Annet Onnes</title>
 		<link href="https://fonts.googleapis.com/css?family=Arvo%7CLato:900" rel="stylesheet">
 		<link rel="stylesheet" href="bucket-of-paint.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/annet.css"> -->
+		<link rel="stylesheet" href="assets/style.css">
 	</head>
 	<body>
 		<div id="website">
 		<header id="header" style="--window-scroll-pos:0.0;">
-			<div id="header-clouds">
-				<video width="1920" height="1080" muted autoplay loop playsinline>
-					<source src="img/clouds.mp4" type="video/mp4">
-				</video>
+			<div id="header-stars">
+				<script type="text/javascript" src="canvasdots.js"></script>
+				<script type="text/javascript">
+				window.addEventListener('load',function(){
+					var canvas = document.createElement("canvas");
+					canvas.id = "canvasdots";
+					canvas.style.pointerEvents = "none";
+					document.body.appendChild(canvas);
+					canvasDots(canvas);
+				});
+			</script>
 			</div>
-			<svg id="header-hill" preserveAspectRatio="xMinYMin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2040 850">
+			<!-- <svg id="header-hill" preserveAspectRatio="xMinYMin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2040 850">
 				<defs>
 					<mask id="hill-mask">
 						<image width="2040" height="850" xlink:href="img/hill-mask.png"></image>
 					</mask>
 				</defs>
 				<image mask="url(#hill-mask)" width="2040" height="850" xlink:href="img/photo.jpg"></image>
-			</svg>
-			<img id="header-name" src="img/jelmervanderlinde.svg" alt="">
-			<svg id="header-jelmer" preserveAspectRatio="xMinYMin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2040 850">
+			</svg> -->
+			<!-- <img id="header-name" src="img/jelmervanderlinde.svg" alt=""> -->
+			<img id="header-name" src="img/annetonnes.svg" alt="">
+			<!-- <svg id="header-jelmer" preserveAspectRatio="xMinYMin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2040 850">
 				<defs>
 					<mask id="jelmer-mask">
 					  <image width="2040" height="850" xlink:href="img/jelmer-mask.png"></image>
 					</mask>
 				</defs>
 				<image mask="url(#jelmer-mask)" width="2040" height="850" xlink:href="img/photo.jpg"></image>
-			</svg>
+			</svg> -->
 		</header>
 		<div id="content">
 		<section id="introduction">
 			<section class="text-section">
-				<h1>Hi!</h1>
+				<h1>Annet Onnes</h1>
+				<p>PhD candidate in artificial intelligence at Utrecht University researching the monitoring of adaptive systems. Also interested in ethics of AI.</p>
 				<p>This website is under construction</p>
 
 
